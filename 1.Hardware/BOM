@@ -1,7 +1,6 @@
 tb67h450 - H Bridge
 
 tja1051r/3 - can transceiver
-may need to replace with tja1042t/3
 
 stm32f103c6t6a - microprocessor
 
@@ -12,6 +11,7 @@ MC34063ABD-TR - buck converter
 FDN352AP - p-channel mosfet
 
 MP2456GJ-P - voltage regulator
+may need to replace with SCT2401TVB
 
 B5819W-TP - schottky diode
 
