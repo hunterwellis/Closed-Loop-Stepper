@@ -5,6 +5,7 @@ A stepper motor using daisey-chained CAN and power connections. Fits on the back
 FOC algorithm used for closed loop control.
 
 ![PCB](./images/FOC_render.png)
+
 *KiCAD render of PCBA*
 
 
