@@ -100,18 +100,18 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-
+  uint16_t i = 0;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-
+	 i++;
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
-
+z
 /**
   * @brief System Clock Configuration
   * @retval None

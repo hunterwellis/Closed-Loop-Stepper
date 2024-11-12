@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "as5600.h"
 #include <string.h>
 
 /* Private includes ----------------------------------------------------------*/
@@ -48,8 +49,7 @@ I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
-static const uint8_t AS5600_ADDR = 0b0110110;
-static const uint8_t REG_ANGLE = 0x00;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -75,10 +75,7 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-	HAL_StatusTypeDef ret;
-	uint8_t buf[12];
-	int16_t val;
-	float angle;
+	float angle = 0;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -111,24 +108,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  buf[0] = REG_ANGLE;
-	  // request from encoder register
-	  ret = HAL_I2C_Master_Transmit(&hi2c1, AS5600_ADDR, buf, 1, HAL_MAX_DELAY);
-	  if ( ret != HAL_OK ) {
-	        strcpy((char*)buf, "Error Tx\r\n");
-	      } else {
+	  angle = AS5600_Angle(&hi2c1);
 
-	        // Read 2 bytes from the encoder register
-	        ret = HAL_I2C_Master_Receive(&hi2c1, AS5600_ADDR, buf, 2, HAL_MAX_DELAY);
-	        if ( ret != HAL_OK ) {
-	          strcpy((char*)buf, "Error Rx\r\n");
-	        } else {
-	          //Combine the bytes
-	          val = ((int16_t)buf[0] << 4) | (buf[1] >> 4);
-
-	          angle = val * 0.0055;
-	        }
-	      }
 	  HAL_Delay(500);
     /* USER CODE BEGIN 3 */
   }
