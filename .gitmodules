@@ -1,0 +1,3 @@
+[submodule "2.Firmware/Base_Driver/libopencm3"]
+	path = 2.Firmware/Base_Driver/libopencm3
+	url = https://github.com/libopencm3/libopencm3.git

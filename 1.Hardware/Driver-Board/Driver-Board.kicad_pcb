@@ -17925,17 +17925,6 @@
 			)
 		)
 	)
-	(gr_text "TARE"
-		(at 145.05 85.05 0)
-		(layer "F.SilkS")
-		(uuid "f339e570-acc7-4476-bbf0-a5e477182dbf")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(gr_text "CLK"
 		(at 157.75 83.4 0)
 		(layer "F.SilkS")

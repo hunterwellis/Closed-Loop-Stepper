@@ -2,7 +2,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include "as5600.h"
 
-static void gpio_setup(void){
+void gpio_setup(void){
 
     rcc_periph_clock_enable(RCC_GPIOC);
     rcc_periph_clock_enable(RCC_GPIOA);
@@ -72,27 +72,27 @@ int main(void){
 
     while(1){
         
-        uint8_t message = 0;
-
-        // start communication and send data
-        i2c_send_start(I2C1);
-        while (!(I2C_SR1(I2C1) & I2C_SR1_SB)); // wait for START condition 
-
-        i2c_send_7bit_address(I2C1, AS5600_ADDR, I2C_READ);
-        while (!(I2C_SR1(I2C1) & I2C_SR1_ADDR)); // wait for slave ack
-
-        (void)I2C_SR2(I2C1); // clear ADDR flag
-
-        // master ack 
-        i2c_enable_ack(I2C1);
-        i2c_send_stop(I2C1);
-
-        while (!(I2C_SR1(I2C1) & I2C_SR1_RxNE));
-        message = i2c_get_data(I2C1);
-
-        i2c_send_stop(I2C1); // Stop communication
-        
-        (void)message;
+        /*uint8_t message = 0;*/
+        /**/
+        /*// start communication and send data*/
+        /*i2c_send_start(I2C1);*/
+        /*while (!(I2C_SR1(I2C1) & I2C_SR1_SB)); // wait for START condition */
+        /**/
+        /*i2c_send_7bit_address(I2C1, AS5600_ADDR, I2C_READ);*/
+        /*while (!(I2C_SR1(I2C1) & I2C_SR1_ADDR)); // wait for slave ack*/
+        /**/
+        /*(void)I2C_SR2(I2C1); // clear ADDR flag*/
+        /**/
+        /*// master ack */
+        /*i2c_enable_ack(I2C1);*/
+        /*i2c_send_stop(I2C1);*/
+        /**/
+        /*while (!(I2C_SR1(I2C1) & I2C_SR1_RxNE));*/
+        /*message = i2c_get_data(I2C1);*/
+        /**/
+        /*i2c_send_stop(I2C1); // Stop communication*/
+        /**/
+        /*(void)message;*/
         // blink led
         for (int i = 0; i < 1000000; i++){
             __asm__("nop");

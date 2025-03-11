@@ -3066,151 +3066,6 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers hide)
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "TB67H450FNG_EL:TB67H450FNG,EL"
 			(pin_names
 				(offset 1.016)
@@ -5541,16 +5396,6 @@
 		)
 		(uuid "694ce6d5-f241-409c-860f-ee6737116861")
 	)
-	(wire
-		(pts
-			(xy 78.74 132.08) (xy 82.55 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bd26bb4-4951-401c-b739-a2c6012cec6a")
-	)
 	(polyline
 		(pts
 			(xy 181.61 12.7) (xy 181.61 78.74)
@@ -5980,16 +5825,6 @@
 			(type default)
 		)
 		(uuid "ab5321b9-1302-4c83-af4a-5fff36aaccbe")
-	)
-	(wire
-		(pts
-			(xy 78.74 133.35) (xy 78.74 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab7538bf-613b-48a4-a93c-eeef508dbbcc")
 	)
 	(wire
 		(pts
@@ -6651,16 +6486,6 @@
 		)
 		(uuid "f9724857-73a6-4db2-a085-1de88266c64f")
 	)
-	(wire
-		(pts
-			(xy 92.71 132.08) (xy 95.25 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fce35991-5272-491a-89e0-0d0f598a5fca")
-	)
 	(text "CAN, SWD, I2C, and Power"
 		(exclude_from_sim no)
 		(at 186.69 20.32 0)
@@ -6671,17 +6496,6 @@
 			(justify left bottom)
 		)
 		(uuid "0bad768a-4c66-4e26-a228-3a50bccc1a3d")
-	)
-	(text "Push Button\nused for tare"
-		(exclude_from_sim no)
-		(at 93.98 140.97 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c32ae25-28cd-4a3d-8c83-17a7bc9729d7")
 	)
 	(text "Reverse Polairty & \nOvercurrent Protection"
 		(exclude_from_sim no)
@@ -8367,28 +8181,6 @@
 			)
 		)
 	)
-	(global_label "BUTTON"
-		(shape input)
-		(at 95.25 132.08 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "f0cae291-04d5-4cee-a541-3b1865150a4b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 104.8598 132.1594 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "B_CURRENT_PWM"
 		(shape input)
 		(at 64.77 148.59 0)
@@ -9166,74 +8958,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 87.63 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1264c1cb-8cf3-4ce7-bfbb-d3bc80a21e14")
-		(property "Reference" "SW1"
-			(at 87.63 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 87.63 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "custom:KMR731NG LFS"
-			(at 87.63 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 87.63 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 87.63 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fcb3dd70-1087-48a6-acb3-654e736d7efe")
-		)
-		(pin "2"
-			(uuid "6e914f3e-6bc1-4fac-b5a3-c150f0e83133")
-		)
-		(instances
-			(project ""
-				(path "/d43c9ddf-895f-499e-825c-a7474ad7dc92"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:Crystal_GND24_Small")
 		(at 97.79 101.6 0)
 		(unit 1)
@@ -9698,71 +9422,6 @@
 			(project ""
 				(path "/d43c9ddf-895f-499e-825c-a7474ad7dc92"
 					(reference "#PWR042")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 78.74 133.35 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1f35edd5-051b-4abc-b8dd-35b5d825f0e5")
-		(property "Reference" "#PWR045"
-			(at 78.74 139.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 78.74 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 78.74 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 78.74 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 78.74 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c92e38c2-ee01-4b31-bb11-bab4c89e3757")
-		)
-		(instances
-			(project ""
-				(path "/d43c9ddf-895f-499e-825c-a7474ad7dc92"
-					(reference "#PWR045")
 					(unit 1)
 				)
 			)
